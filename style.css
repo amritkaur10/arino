@@ -1,0 +1,545 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+body {
+    background-color: #121212;
+}
+
+/* HEADER SECTION */
+
+.main {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 110vh;
+    background-image: url(assets/images/hero_bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner_text h1 {
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+.banner .back {
+    background-color: red;
+}
+
+
+/* MAIN OFFCANVAS */
+
+.dropdown-menu {
+    background-color: #121212;
+    border-top: 2px solid orangered;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background: none;
+    color: rgb(228, 77, 22);
+}
+
+.offcanvas {
+    overflow-y: scroll;
+}
+
+.offcanvas-footer .btn {
+    /* position: absolute; */
+    margin-left: -10px;
+    padding: 6px 18px;
+}
+
+#offbtn {
+    background-color: black;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+
+
+/* FUN FACT SECTION */
+
+.box {
+    background-image: url(assets/images/funfact_shape_bg.svg);
+    width: 90%;
+    /* left: 5%; */
+    min-height: 35vh;
+    background-color: rgb(13, 12, 12);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    /* position: absolute; */
+    /* top: 9%; */
+    line-height: 1.8rem;
+    /* bottom: -40%; */
+    margin: auto;
+    position: relative;
+    top: -100px;
+
+}
+
+.fun_num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 40px; */
+}
+
+
+/* SERVICE SECTION */
+
+.service .image {
+    position: relative;
+}
+
+.service .image:hover {
+    box-shadow: 0 4px 35px 5px rgb(231, 91, 40);
+    border-radius: 20px;
+
+}
+
+.service .back_img img {
+    border-radius: 20px;
+    opacity: .5;
+}
+
+.service .text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    min-height: 11vmax;
+    left: 3px;
+}
+
+
+
+
+/* SLIDER SECTION */
+
+.carousel .main {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.carousel .content {
+    background-color: orangered;
+    color: white;
+    width: 310px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 63%;
+    left: -30px;
+}
+
+
+/* AWARD SECTION */
+
+.award .num {
+    color: #ff4a17;
+}
+
+
+
+/* VIDEO SECTION */
+
+.main-video {
+    width: 85%;
+    min-height: 90vh;
+    margin: auto;
+    background-image: url(assets/images/video_bg.jpeg);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+
+.main-video {
+    position: relative;
+}
+
+.videobtn {
+    /* position: absolute; */
+    top: 44%;
+    left: 45%;
+}
+
+.main_btn {
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.play-icon {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+}
+
+.play-icon i {
+    color: orangered;
+    padding-left: 5px;
+}
+
+.inner-ring {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    animation: ani 1.2s linear infinite;
+}
+
+@keyframes ani {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(2.1);
+        opacity: 0;
+    }
+}
+
+
+
+
+/* MEMBERS SECTION */
+
+.member .main {
+    position: relative;
+    /* border-radius: 10%; */
+}
+
+.member .main img {
+    border-radius: 10%;
+}
+
+.main_text {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 70%;
+    left: 18%;
+}
+
+
+/* COMMENT SECTION */
+
+.comment {
+    background-color: #000;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment img {
+    width: 70%;
+    border-radius: 14px;
+    /* border: 1px solid black; */
+}
+
+
+
+/* BLOG SECTION */
+
+.blog img {
+    position: relative;
+    width: 100%;
+    border-radius: 10%;
+    /* opacity: .8; */
+}
+
+.blog .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 10px;
+    top: 0px;
+    left: 0;
+    background: linear-gradient(#000, rgba(77, 77, 77, 0));
+    border-radius: 10%;
+
+}
+
+.blog .card {
+    border-radius: 10%;
+    background: linear-gradient(#000, rgba(77, 77, 77, 0));
+}
+
+
+
+
+/* ANIMATION SECTION */
+
+.moving h1 {
+    letter-spacing: 1px;
+    font-family: helvetica;
+    overflow: hidden;
+    font-size: 120px;
+    color: transparent !important;
+    -webkit-text-stroke: 2px #ff4a17;
+}
+
+marquee {
+    color: transparent;
+}
+
+
+
+/* MEETING SECTION */
+
+.meeting {
+    /* position: relative; */
+    background: url(./assets/images/cta_bg.jpeg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    height: 60vh;
+    z-index: 2;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.meeting .text {
+    /* position: absolute; */
+    text-align: center;
+    /* transform: translate(60%, -20%); */
+}
+
+.meeting .text h1 {
+    font-weight: bolder;
+    font-size: 44px;
+    /* opacity: .9; */
+}
+
+.meeting .meeting_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* margin: auto; */
+}
+
+.meeting a {
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.meeting h5:hover {
+     color: #ff4a17;
+    text-decoration: none;
+    /* box-shadow: 0 0px 40px 1px #ff4a17; */
+}
+
+
+
+/* MEDIA QUERY */
+
+
+@media screen and (min-width:320px) and (max-width:576px) {
+    #main h1 {
+        font-size: 46px;
+    }
+
+    .meeting .text h1 {
+        font-size: 25px;
+    }
+
+    .fun-bg {
+        height: 70vh;
+    }
+
+    .moving h1 {
+        font-size: 40px;
+    }
+
+    .carousel .content {
+        height: 140px;
+        width: 170px;
+        top: 40%;
+    }
+
+    .carousel .content h2 {
+        font-size: 14px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .comment {
+        height: 100vh;
+    }
+
+    .comment img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .comment h4 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    .box {
+        bottom: -73%;
+        line-height: 1.6rem;
+    }
+
+    .banner_text h1 {
+        font-size: 45px;
+    }
+
+    .serviceheight {
+        height: 70vh;
+    }
+
+    .main-video {
+        min-height: 35vh;
+        width: 90%;
+    }
+
+    .play-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .inner-ring {
+        width: 60px;
+        height: 60px;
+        /* font-size: 16px; */
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    #main h1 {
+        font-size: 56px;
+    }
+
+    .main_text {
+        position: absolute;
+        top: 70%;
+        left: 25%;
+        /* color: white; */
+    }
+
+    .carousel .content {
+        height: 190px;
+        width: 200px;
+        top: 53%;
+    }
+
+    .carousel .content h2 {
+        font-size: 16px;
+    }
+
+    .comment {
+        height: 100vh;
+    }
+
+    .comment img {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    .comment h4 {
+        font-size: 20px;
+    }
+
+    .box {
+        bottom: -55%;
+        /* top: 7%; */
+        line-height: 1.4rem;
+    }
+
+    .banner_text h1 {
+        font-size: 70px;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .carousel .content {
+        height: 230px;
+        width: 240px;
+        top: 55%;
+    }
+
+    .carousel .content h2 {
+        font-size: 20px;
+    }
+
+    .comment h4 {
+        font-size: 20px;
+    }
+
+    .comment {
+        height: 100vh;
+    }
+
+    .comment img {
+        width: 40%;
+    }
+
+    .box {
+        bottom: -55%;
+        /* top: 7%; */
+        line-height: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:991px) {
+    #close {
+        display: none;
+    }
+
+    #offbtn {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        background: black !important;
+    }
+}
