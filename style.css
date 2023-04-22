@@ -382,7 +382,10 @@ marquee {
     bottom: 1.5rem;
     position: fixed;
 }
-
+#btn i{
+    font-size: 18px;
+    color: white;
+}
 
 /* MEDIA QUERY */
 
